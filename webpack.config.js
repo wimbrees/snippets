@@ -33,6 +33,14 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin()
-    ]
+    ],
+    devServer: {
+        proxy: {
+            '*': {
+                target: 'http://127.0.0.1:3000',
+                secure: false
+            }
+        }
+    }
 };
 
