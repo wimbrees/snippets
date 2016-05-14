@@ -10,7 +10,7 @@ module.exports = {
         './src'
     ],
     output: {
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, 'public/javascripts'),
         // <script src="bundle.js"></script>
         filename: 'bundle.js'
     },
@@ -43,4 +43,3 @@ module.exports = {
         }
     }
 };
-
